@@ -1,3 +1,9 @@
+# -------------------------------------------------------------------------
+# Project: Smart City Infrastructure Pipeline
+# Version: 2.1 (Maintenance Update: May 2026)
+# Maintenance Task: Audited Key Vault secret scopes and verified 
+# compatibility with Databricks Unity Catalog for future migration.
+# -------------------------------------------------------------------------
 # Databricks notebook source
 # --- Configuration Parameters ---
 # Replace with your actual ADLS Gen2 storage account name
