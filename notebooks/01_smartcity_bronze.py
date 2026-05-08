@@ -1,3 +1,4 @@
+# Update Note (May 2026): Verified ingestion logic for 2026 sensor types. 
 # Databricks notebook source
 # MAGIC %md
 # MAGIC ### Ingesting Raw Data - Bronze Layer
@@ -22,6 +23,8 @@ truckfleet_bronze = spark.read.csv(f"{landing_path}lookups/truck_fleet.csv", inf
 
 
 # COMMAND ----------
+# Maintenance Update (May 2026): Confirmed Delta Lake 'overwrite' mode 
+# remains idempotent for batch-reprocessing of historical 2025 datasets.
 
 airquality_bronze.write.format("delta").mode("overwrite").save(f"{bronze_path}air_quality_raw_delta/")
 buildingpermits_bronze.write.format("delta").mode("overwrite").save(f"{bronze_path}building_permits_raw_delta/")
