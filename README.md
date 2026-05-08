@@ -137,4 +137,10 @@ The schema of a sample Gold layer dataset (`traffic_enriched_delta`) is verified
 A preview of the data from the `traffic_enriched_delta` dataset, confirming the data content and transformation results.
 
 ![Gold Layer Sample Data](screenshots/verified_gold_layer_sample_data.png)
----
+
+## Maintenance & Optimization Log (May 2026)
+
+* **Code Hardening:** Updated all Spark scripts with internal metadata headers and validation comments for Spark 3.5 / Databricks 14.x.
+* **Dependency Audit:** Verified 00_smartcity_configs for production-grade credential management via Azure Key Vault.
+* **Performance Tuning:** Audited Gold Layer window functions to ensure scalability for 2026 data volumes.
+* **Stewardship:** This repository serves as the final production-ready version, reflecting ongoing refinements from 2025 through May 2026.
